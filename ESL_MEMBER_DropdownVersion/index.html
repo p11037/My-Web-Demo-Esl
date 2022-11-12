@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="function.js" defer></script>
+  <title>ESL MEMBER</title>
+</head>
+<body>
+  <div class="search">
+    <label for="search">Search Users</label>
+    <input type="search" id="search-users" onkeyup="search()">
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" onclick="filterSelection('all')">Show All</button>
+    <div class="dropdown-content">
+      <a href="#" class="btn" onclick="filterSelection('1')"> 1</a>
+      <a href="#" class="btn" onclick="filterSelection('2')">2</a>
+      <a href="#" class="btn" onclick="filterSelection('3')">3</a>
+      <a href="#" class="btn" onclick="filterSelection('4')"> 4</a>
+    </div>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="user-cards" id="user-cards">
+      <div class="filterDiv 1">
+        <div class="card">
+          <h2>New1 Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 1</div>
+        </div>
+
+        <div class="card">
+          <h2>New2 Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 1</div>
+        </div>
+      </div>
+      
+      <div class="filterDiv 2">
+        <div class="card">
+          <h2>Kid Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 2</div>
+        </div>
+
+        <div class="card">
+          <h2>Nin Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 2</div>
+        </div>
+
+      </div>
+
+      <div class="filterDiv 3">
+        <div class="card">
+          <h2>P'Far Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 3</div>
+        </div>
+
+        <div class="card">
+          <h2>P'Samach Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 3</div>
+        </div>
+      </div>
+
+      <div class="filterDiv 4">
+        <div class="card">
+          <h2>P'Font Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 4</div>
+        </div>
+
+        <div class="card">
+          <h2>P'Pamai Thammada</h2>
+          <div class="body">64010813@kmitl.ac.th</div>
+          <div>Row : 4</div>
+        </div>
+      </div>
+      
+  </div>
+</body>
+</html>
